@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+     --cor-primaria: #000000;
+     --cor-secundaria: #f6f6f6;
+     --cor-tercearia: #576CBC; 
+     --cor-hover: #19376D; 
+
+     --fonte-primaria: 'Krona One', sans-serif;
+     --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+.barra_navegacao{
+    display: flex;
+    padding: 2% 0% 0% 15%;
+    gap: 80px;
+}
+.bnav{
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+}
+.color{
+    color: var(--cor-tercearia);
+}
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 15%;
+    align-items: center;
+}
+.a_conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.a_titulo{
+  
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+.a_texto{
+  
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+    width: 700px;
+}
+.a_link{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px 
+}
+.a_subtitulo{
+       font-family: var(--fonte-primaria);
+       font-weight: 400;
+       font-size: 24px;
+}
+.a_btn{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 24px;
+    padding: 21.5px 0;
+    font-family: var(--fonte-secundaria);
+    border-radius: 8px;
+    width: 370px;
+    text-align: center;
+    font-weight:600;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-tercearia);
+}
+.a_btn:hover{
+    background-color: var(--cor-hover);
+    transition: 1s;
+}
+.foto{
+    box-shadow: 0px 0px 10px 5px  #22d5fd82;
+    border-radius: 10px;
+}
+.rodape{
+    background-color: var(--cor-tercearia);
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    color: var(--cor-primaria);
+    padding: 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+/* proxima pagina  SOBRE MIM */
+
+.foto2{
+    box-shadow: 0px 0px 10px 5px  #22d5fd82;
+    border-radius: 10px;
+}
+
+.caixa_foto{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* proxima pagina  CURRICULO */
+
+.link_curriculo{
+    text-decoration: none;
+    color: var(--cor-tercearia);
+}
+
