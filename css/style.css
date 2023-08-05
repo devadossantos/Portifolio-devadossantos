@@ -8,6 +8,9 @@
 
      --fonte-primaria: 'Krona One', sans-serif;
      --fonte-secundaria: 'Montserrat', sans-serif;
+
+     --fonte-tamanho-1: 1.5rem;
+     --fonte-tamanho-2: 2.25rem;
 }
 
 *{
@@ -28,7 +31,7 @@ body{
     color: var(--cor-tercearia);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: var(--fonte-tamanho-1);
     text-decoration: none;
 }
 .color{
@@ -39,9 +42,10 @@ body{
     justify-content: space-between;
     padding: 5% 15%;
     align-items: center;
+    gap:80px;
 }
 .a_conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -49,15 +53,15 @@ body{
 }
 .a_titulo{
   
-    font-size: 36px;
+    font-size: var(--fonte-tamanho-2);
     font-family: var(--fonte-primaria);
 }
 .a_texto{
   
-    font-size: 24px;
+    font-size: var(--fonte-tamanho-1);
     font-family: var(--fonte-secundaria);
     text-align: justify;
-    width: 700px;
+    width: 100%;
 }
 .a_link{
     display: flex;
@@ -69,7 +73,7 @@ body{
 .a_subtitulo{
        font-family: var(--fonte-primaria);
        font-weight: 400;
-       font-size: 24px;
+       font-size: var(--fonte-tamanho-1);
 }
 .a_btn{
     display: flex;
@@ -77,11 +81,11 @@ body{
     gap: 16px;
     text-decoration: none;
     color: var(--cor-primaria);
-    font-size: 24px;
+    font-size: var(--fonte-tamanho-1);
     padding: 21.5px 0;
     font-family: var(--fonte-secundaria);
     border-radius: 8px;
-    width: 370px;
+    width: 50%;
     text-align: center;
     font-weight:600;
     color: var(--cor-secundaria);
@@ -94,13 +98,14 @@ body{
 .foto{
     box-shadow: 0px 0px 10px 5px  #22d5fd82;
     border-radius: 10px;
+    width: 50%;
 }
 .rodape{
     background-color: var(--cor-tercearia);
     font-family: var(--fonte-secundaria);
     text-align: center;
     color: var(--cor-primaria);
-    padding: 24px;
+    padding: var(--fonte-tamanho-1);
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -122,5 +127,41 @@ body{
 .link_curriculo{
     text-decoration: none;
     color: var(--cor-tercearia);
+}
+
+
+@media (max-width: 1200px){
+
+
+    .apresentacao{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5% 15%;
+        align-items: center;
+        gap:80px;
+    }
+    .a_conteudo{
+        width:100%;
+    }
+    .foto{
+        width: 80%;
+    }
+    .barra_navegacao{
+        display: flex;
+        padding: 5% 20%
+    }
+}
+
+@media (max-width: 750px){
+
+    body{
+        background-color: rgb(31, 31, 31);
+    }
+    .a_conteudo{
+        width:100%;
+    }
+    .foto{
+        width: 80%;
+    }
 }
 
