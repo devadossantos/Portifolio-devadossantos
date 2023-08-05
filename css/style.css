@@ -148,7 +148,8 @@ body{
     }
     .barra_navegacao{
         display: flex;
-        padding: 5% 20%
+        padding: 15% 20%;
+        justify-content: center;
     }
 }
 
