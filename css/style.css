@@ -17,11 +17,13 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     background-color: var(--cor-primaria);
     box-sizing: border-box;
     color: var(--cor-secundaria);
 }
+
 .barra_navegacao{
     display: flex;
     padding: 2% 0% 0% 15%;
@@ -42,7 +44,7 @@ body{
     justify-content: space-between;
     padding: 5% 15%;
     align-items: center;
-    gap:80px;
+    gap:82px;
 }
 .a_conteudo{
     width: 50%;
@@ -60,8 +62,6 @@ body{
   
     font-size: var(--fonte-tamanho-1);
     font-family: var(--fonte-secundaria);
-    text-align: justify;
-    width: 100%;
 }
 .a_link{
     display: flex;
@@ -112,57 +112,40 @@ body{
 }
 /* proxima pagina  SOBRE MIM */
 
-.foto2{
-    box-shadow: 0px 0px 10px 5px  #22d5fd82;
-    border-radius: 10px;
-}
+
 
 .caixa_foto{
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-/* proxima pagina  CURRICULO */
 
-.link_curriculo{
-    text-decoration: none;
-    color: var(--cor-tercearia);
-}
 
 
 @media (max-width: 1200px){
 
-
+    .a_conteudo{
+        width:auto;
+    }
+    .foto{
+        width: 80%;
+    }
     .apresentacao{
         display: flex;
         flex-direction: column-reverse;
-        padding: 5% 15%;
+        padding-bottom: 20%;
+        padding: 25% 5%;
         align-items: center;
-        gap:80px;
+
     }
-    .a_conteudo{
-        width:100%;
-    }
-    .foto{
-        width: 80%;
+    .a_texto{
+      text-align: justify;
     }
     .barra_navegacao{
         display: flex;
-        padding: 15% 20%;
+        padding: 8%;
         justify-content: center;
     }
-}
 
-@media (max-width: 750px){
-
-    body{
-        background-color: rgb(31, 31, 31);
-    }
-    .a_conteudo{
-        width:100%;
-    }
-    .foto{
-        width: 80%;
-    }
 }
 
