@@ -15,10 +15,6 @@ body {
   align-items: center;
   position: relative;
 }
-.cabecalho .container {
-  display: flex;
-  align-items: center;
-}
 .cabecalho .container .container_botao {
   display: none;
 }
@@ -64,15 +60,37 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (min-width: 720px) {
+  .cabecalho .container .lista_menu {
+    display: flex;
+    position: static;
+    width: 60vw;
+    font-size: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    font-weight: bold;
+  }
+  .cabecalho .container label .container_imagem {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cabecalho .container .lista_menu {
+    width: 60vw;
+  }
+}
 .apresentacao {
   display: flex;
   flex-direction: column;
 }
 .apresentacao img {
-  padding: 20px;
+  border-radius: 15px;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 80vw;
+  box-shadow: 0px 0px 10px 2px #87CEEB;
 }
 .apresentacao .a_titulo {
   padding-left: 20px;
@@ -96,14 +114,16 @@ h1 {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 0.8rem;
-  padding-bottom: 10px;
-  gap: 10px;
 }
 .redes .redes_titulo {
   text-align: center;
 }
-.redes .a_btn {
+.redes div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.redes div .a_btn {
   border: 2px solid #87CEEB;
   border-radius: 50px;
   text-align: center;
@@ -112,4 +132,41 @@ h1 {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: white;
+}
+.redes .rodape {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .apresentacao .a_titulo {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 1.5rem;
+  }
+  .apresentacao .a_texto {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .redes div {
+    flex-direction: row;
+    width: 85vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .redes .a_btn {
+    padding: 10px;
+  }
+  .rodape {
+    border-top: 1px solid rgb(0, 0, 0);
+    margin-top: 15px;
+    background-color: #87CEEB;
+  }
+  .rodape p {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: font;
+    font-family: "Poppins", sans-serif;
+  }
 }/*# sourceMappingURL=style.css.map */
