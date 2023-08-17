@@ -1,0 +1,115 @@
+@import '../abstract/variaveis.scss';
+
+body{
+    background-color: black;
+}
+.cabecalho{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .container{
+        .container_botao{
+            display: none
+        }
+        .container_botao:checked  ~ .lista_menu{
+            display: block;
+            background-color: rgb(20, 20, 20);
+            border-end-end-radius: 10px;
+            opacity: 90%;
+        }
+        display: flex;
+        align-items: center;
+        label{
+            .cabecalho__menu-hamburguer{
+                width: 24px;
+                height: 24px;
+                background-image: url(../img/Menu.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+                
+            }
+            .container_imagem{
+                padding: 1em;
+            }
+        }
+        .lista_menu{
+            display: none;
+           list-style: none;
+           position: absolute;
+           top:100%;
+           width: 40vw;
+            .lista_menu_item{
+                padding: 0.5em;
+                text-transform: uppercase;
+                
+                a{
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    color: white;
+                }
+            }
+        
+        }
+    }
+}
+h1{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    img {
+        padding: 20px;
+        margin: auto;
+        margin-top: 20px;
+        width: 80vw;
+    }
+    .a_titulo{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $font2;
+    text-align: justify;
+    font-size: 1rem;
+     .color{
+        color: $cor1;
+     }
+    }
+    .a_texto{
+        padding: 20px;
+        color: white;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+    gap: 10px;
+    .redes_titulo{
+        text-align: center;
+    }
+    
+    .a_btn{
+        border: 2px solid $cor1;
+        border-radius: 50px;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        
+    }
+}

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: black;
+}
+
+.cabecalho {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+}
+.cabecalho .container .container_botao {
+  display: none;
+}
+.cabecalho .container .container_botao:checked ~ .lista_menu {
+  display: block;
+  background-color: rgb(20, 20, 20);
+  border-end-end-radius: 10px;
+  opacity: 90%;
+}
+.cabecalho .container label .cabecalho__menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.cabecalho .container label .container_imagem {
+  padding: 1em;
+}
+.cabecalho .container .lista_menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  width: 40vw;
+}
+.cabecalho .container .lista_menu .lista_menu_item {
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+.cabecalho .container .lista_menu .lista_menu_item a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+}
+.apresentacao img {
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  width: 80vw;
+}
+.apresentacao .a_titulo {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Krona One";
+  text-align: justify;
+  font-size: 1rem;
+}
+.apresentacao .a_titulo .color {
+  color: #87CEEB;
+}
+.apresentacao .a_texto {
+  padding: 20px;
+  color: white;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+.redes .redes_titulo {
+  text-align: center;
+}
+.redes .a_btn {
+  border: 2px solid #87CEEB;
+  border-radius: 50px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

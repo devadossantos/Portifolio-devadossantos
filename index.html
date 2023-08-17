@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/styles/style.css">
+    <title>@DEVADOSSANTOS FRONT-END DEVELOPMENT</title>
 </head>
 <body>
-    <header>
-        <nav class="barra_navegacao">
-            <a href="index.html" class="bnav">Home</a>
-            <a href="about.html" class="bnav">Sobre mim</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="a_conteudo">
-            <h1 class="a_titulo">Eleve seu negócio digital a outro nível <strong class="color">com um Front-end de qualidade</strong>!</h1>
-            <p class="a_texto">Olá! Sou Anisio Gustavo, tecnologo em redes de computadores  e desenvolvedor Front-end e estou pós-graduando em Engenharia de Sofware. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-            <div class="a_link">
-                <h2 class="a_subtitulo">Acesse minhas redes:</h2>
-            <a href="https://www.linkedin.com/in/anisio-gustavo/" target="_blank" class="a_btn"> <img src="./assets/linkedin.png" alt="github">Linkedin</a>
-            <a href="https://github.com/devadossantos" target="_blank" class="a_btn"><img src="./assets/github.png" alt="github">GitHub</a>
+     <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container_imagem"> </span>
+            </label>
+            <ul class="lista_menu">
+                <li class="lista_menu_item"><a href="/index.html">Home</a></li>
+                <li class="lista_menu_item"><a href="#">Sobre mim</a></li>
+                <li class="lista_menu_item"><a href="#">Curriculo</a></li>
+                <li class="lista_menu_item"><a href="#">Meus projetos</a></li>
+            </ul>
         </div>
-       </section>
-       <img src="assets/foto.jpg" class="foto" alt="foto do dev">
-    </main>
-    <footer class="rodape">Desenvolvido por devadossantos.</footer>
+        <h1>Anisio front-end development</h1>
+     </header>
+
+     <section class="apresentacao">
+        <img src="./Assets/img/foto.jpeg" alt="foto de anisio">
+        <h1 class="a_titulo">Eleve seu negócio digital a outro nível <strong class="color">com um Front-end de qualidade</strong>!</h1>
+
+        <p class="a_texto">Olá! Sou Anisio Gustavo, tecnologo em redes de computadores  e desenvolvedor Front-end e estou pós-graduando em Engenharia de Sofware. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+     </section>
+
+     <section class="redes">
+        <h2 class="redes_titulo">Acesse minhas redes:</h2>
+    <a href="https://www.linkedin.com/in/anisio-gustavo/" target="_blank" class="a_btn"> <img src="./assets/img/linkedin.png" alt="github">Linkedin</a>
+    <a href="https://github.com/devadossantos" target="_blank" class="a_btn"><img src="./assets/img/github.png" alt="github">GitHub</a>
+</section>
+
 </body>
 </html>
